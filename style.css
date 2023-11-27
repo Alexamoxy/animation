@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.animation {
+    min-height: 100vb;
+    width: 100vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: sky-changing;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sky-changing {
+    0% { 
+        background:aliceblue;
+    }
+    15% {
+        background: darkblue;
+    }
+    65% {
+        background: darkblue;
+    }
+    75% {
+        background: aliceblue;
+    }
+}
+#hand-man {
+    animation-name: shaking;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shaking {
+    from {
+        translate: 0 0;
+    }
+    to {
+        translate: 0px -8px;
+    }
+}
+
+#hand-woman {
+    animation-name: woman;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 200% 0%;
+    animation-timing-function: linear;
+}
+
+@keyframes woman {
+    from {
+       rotate: 0 0;
+    }
+    to {
+        rotate: y 13deg;
+    }
+}
+
+#sun, #moon {
+    animation-name: sun-moon-changing;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 75%;
+}
+#moon {
+    fill: rgb(163, 159, 159);
+animation-delay: 6s;
+    rotate: 180deg;
+}
+#sun {
+    fill: rgb(255, 198, 9);
+}
+
+@keyframes sun-moon-changing {
+    0% {
+        rotate: 0deg;
+    }   
+    to {
+        rotate: 360deg;
+    }
+}   
+
+#clouds-1, #clouds-2 {
+    animation-name: clouds;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#clouds-2 {
+    animation-duration: 12s;
+}
+
+@keyframes clouds {
+    0% {
+        translate: 100%;
+    }
+    100% {
+        translate: -100%;
+    }
+}
+
+#btn12 {
+    animation-name: btn12;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn12 {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(156, 19, 19);
+    }
+}
+#btn11 {
+    animation-name: btn11;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn11 {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(156, 19, 19);
+    }
+}
+#btn13 {
+    animation-name: btn13;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn13 {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(19, 156, 33);
+    }
+}
+#close {
+    animation-name: close;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes close {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(21, 19, 156);
+    }
+}
+#past {
+    animation-name: past;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes past {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(156, 19, 154);
+    }
+}
+#btn14 {
+    animation-name: btn14;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn14 {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(19, 147, 156);
+    }
+}
+#btn15 {
+    animation-name: btn15;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn15 {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(156, 19, 136);
+    }
+}
+#btn16 {
+    animation-name: btn16;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn16 {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(19, 30, 156);
+    }
+}
+#wtf {
+    animation-name: wtf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wtf {
+    from {
+        fill: white;
+    }
+    to {
+        fill: rgb(122, 156, 19);
+    }
+}
